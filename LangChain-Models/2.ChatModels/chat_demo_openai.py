@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatOpenAI(model='gpt-4', temperature=1.5, max_completion_tokens=10)
+model = ChatOpenAI(model='gpt-5.5', temperature=1.5)
 
-result = model.invoke("Write a 5 line poem on cricket")
+result = model.invoke("Who is the current captain of RCB ?")
 
 print(result.content)

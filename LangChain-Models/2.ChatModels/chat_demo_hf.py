@@ -10,6 +10,6 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm)
 
-result = model.invoke("What is the capital of India")
+result = model.invoke("Who is the current captain of RCB ?")
 
 print(result.content)
